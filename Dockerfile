@@ -11,7 +11,7 @@ FROM nginx:bookworm
 LABEL org.opencontainers.image.source="https://github.com/jclaudan/proton-bridge-docker" \
       org.opencontainers.image.title="Proton Mail Bridge" \
       org.opencontainers.image.desctiption="Docker image to run Proton Mail Bridge" \
-      org.opencontainers.image.authors="wormi4ok"
+      org.opencontainers.image.authors="jclaudan"
 
 WORKDIR /protonmail
 
