@@ -21,6 +21,10 @@ RUN bash install.sh
 
 COPY --from=binary /usr/local/bin/fakeauth /usr/local/bin/fakeauth
 
+RUN apt-get update
+RUN apt-get install -y gnome-keyring
+RUN apt-get install -y dbus-x11
+
 EXPOSE 25/tcp
 EXPOSE 143/tcp
 COPY nginx.conf /etc/nginx/nginx.conf
