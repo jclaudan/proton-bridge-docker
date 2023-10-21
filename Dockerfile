@@ -8,7 +8,7 @@ RUN go build -v -o /usr/local/bin/fakeauth fakeauth
 
 FROM nginx:bookworm
 
-LABEL org.opencontainers.image.source="https://github.com/wormi4ok/proton-bridge-docker" \
+LABEL org.opencontainers.image.source="https://github.com/jclaudan/proton-bridge-docker" \
       org.opencontainers.image.title="Proton Mail Bridge" \
       org.opencontainers.image.desctiption="Docker image to run Proton Mail Bridge" \
       org.opencontainers.image.authors="wormi4ok"
